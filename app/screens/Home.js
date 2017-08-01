@@ -4,15 +4,17 @@ import {
     Text
 } from 'react-native';
 
-import PropTypes from 'prop-types';
+import { ContainerMain } from '../components/Container';
 
 const Home = (props) => {
     return (
-        <View>
-            <Text>
-                this is home
-            </Text>
-        </View>
+        <ContainerMain>
+            <View>
+                <Text>
+                    this is home
+                </Text>
+            </View>
+        </ContainerMain>
     )
 };
 
