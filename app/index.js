@@ -1,5 +1,5 @@
 import React  from 'react';
-import Home from './screens/Home';
+import Navigator from './config/router';
 
 import EStyleSheet from 'react-native-extended-stylesheet';
 
@@ -21,7 +21,7 @@ EStyleSheet.build({
 
 const App = () => {
     return (
-        <Home />
+        <Navigator />
     );
 };
 

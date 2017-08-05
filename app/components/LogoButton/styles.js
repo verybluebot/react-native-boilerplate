@@ -14,7 +14,7 @@ export default EStyleSheet.create({
         fontSize: 18
     },
     logo: {
-
+        marginRight: 20
     },
     button: {
 
