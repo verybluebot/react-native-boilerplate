@@ -8,8 +8,16 @@ EStyleSheet.build({
     $white: '#fff',
     $black: '#000',
 
-    $primary: '#3498db',
+    $primary: '#2196F3',
+    $darkPrimary: '#1976D2',
+    $lightPrimary: '#BBDEFB',
+    $textColor: '#FFFFFF',
+    $accentColor: '#FF4081',
+    $primaryTextColor: '#212121',
+    $secondaryTextColor: '#757575',
+    $deviderColor: '#BDBDBD',
 });
+
 
 const App = () => {
     return (
