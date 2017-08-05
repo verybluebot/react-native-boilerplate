@@ -6,17 +6,18 @@ import {
 } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import Icon from 'react-native-vector-icons/Foundation';
 import { Button } from 'react-native-elements';
 
-const LogoWithButton = ({ onPress }) => {
+const LogoWithButton = (props) => {
     return (
         <View style={styles.container}>
 
             <Icon style={styles.logo} name='foot' size={90} color='white' />
             <Text style={styles.text}>
-                Start Here
+                {props.mainText ? props.mainText : 'Start Here'}
             </Text>
             <Button
                 style={styles.button}
@@ -26,14 +27,18 @@ const LogoWithButton = ({ onPress }) => {
                 buttonStyle={{backgroundColor: styles.$buttonColor, borderRadius: 1}}
                 textStyle={{textAlign: 'center'}}
                 title='NEXT'
-                onPress={onPress}
+                onPress={props.onPress}
             />
         </View>
     )
 };
 
 LogoWithButton.porpTypes = {
-    onPress: PropTypes.func
+    onPress: PropTypes.func,
 };
 
-export default LogoWithButton;
+const mapStateToProps = (state) => ({
+    mainText: state.main.mainText
+});
+
+export default connect(mapStateToProps)(LogoWithButton);
