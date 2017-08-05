@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { StatusBar } from 'react-native';
+
 import { ContainerMain } from '../components/Container';
+import { IconChanger } from '../components/IconChanger';
 
 class Start extends Component {
     render() {
         return (
             <ContainerMain>
-                <View>
-                    <Text>
-                        this is shit
-                    </Text>
-                </View>
+                <StatusBar barStyle="default" />
+                <IconChanger />
             </ContainerMain>
         )
     }

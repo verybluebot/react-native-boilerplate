@@ -13,10 +13,14 @@ export default StackNavigator(
 
         },
         Start: {
-            screen: Start
+            screen: Start,
+            navigationOptions: {
+                headerTitle: 'Start'
+            }
         }
     },
     {
         headerMode: 'screen'
+
     }
 )
