@@ -20,7 +20,7 @@ under the hood:
 ## Install
  1. for installing download/clone:
 ```
-git clone https://github.com/verybluebot/react-native-boilerplate
+git clone https://github.com/verybluebot/react-native-boilerplate.git
 ```
 
 2. cd into the project:
