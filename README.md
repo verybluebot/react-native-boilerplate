@@ -6,7 +6,7 @@ overloading your code and understanding :)
 This is the bare minimum, for my own porjects I guss with time more will be added. 
 That said I wanted it to be as lean and minimal as possible.
 
-the boilerplate is a 2 page "app" with button naviage you from the main page to the second page.
+the boilerplate is a 2 page "app" with navigation button to the second page.
 On the second page there is an input field that changes text on that page and on the main page.
 
 under the hood:
