@@ -33,7 +33,7 @@ const LogoWithButton = (props) => {
     )
 };
 
-LogoWithButton.porpTypes = {
+LogoWithButton.propTypes = {
     onPress: PropTypes.func,
 };
 
